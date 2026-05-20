@@ -21,10 +21,12 @@ This document outlines planned upgrades, enhancements, and long-term goals for t
 - Reduce latency for Plex, Immich, and Syncthing
 - Extend HDD lifespan by reducing random writes
 
-### **Expand Storage Pools**
-- Add additional HDDs for larger media libraries
-- Improve redundancy (RAIDZ2 or mirrored vdevs)
-- Prepare for long-term family photo/video growth
+### **Rotate and Replace Media HDDs Instead of Expanding the Pool**
+- When the current media HDD becomes full, retire it and replace it with a new drive
+- Before swapping, create a full backup of the old drive onto the new one
+- Keeps the main server simple and avoids overly large or complex storage pools
+- Ensures each drive remains easy to manage, replace, and restore
+- Long-term media growth is handled by the dedicated backup server, which will use larger-capacity drives
 
 ---
 
