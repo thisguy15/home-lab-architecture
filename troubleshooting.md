@@ -136,11 +136,11 @@ SMB permissions behave as expected, and privacy is fully enforced.
 ---
 
 ## Purpose of This Document
-Troubleshooting is a core IT skill.  
-This log demonstrates:
-- systematic problem analysis  
-- root cause identification  
-- corrective action  
-- long-term prevention  
+This troubleshooting log serves as a record of real-world issues, design considerations, and the problem‑solving process used throughout my home-lab environment. It demonstrates:
 
-It also serves as a growing reference for future issues.
+- systematic troubleshooting and root cause analysis  
+- understanding of networking, storage, permissions, and service behavior  
+- documentation of both resolved issues and planned design challenges  
+- long-term thinking, prevention, and continuous improvement  
+
+This document will continue to grow as the environment evolves, providing a reference for future issues and a clear view of my practical IT experience.
