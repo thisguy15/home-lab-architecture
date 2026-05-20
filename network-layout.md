@@ -65,23 +65,26 @@ This document outlines the network architecture of my home-lab, including LAN st
 4. No port forwarding or public exposure required
 
 ## Network Diagram (Text-Based)
+
+```
 [Internet]
-|
+     |
 [ISP Router]
-|
-[Home LAN] -----------------------------+
-|                                    |
-[TrueNAS Scale]                          |
-|                                    |
-[Raspberry Pis]                          |
-|                                    |
-[Client Devices]                         |
-|
+     |
+  [Home LAN] -----------------------------+
+     |                                    |
+ [TrueNAS Scale]                          |
+     |                                    |
+ [Raspberry Pis]                          |
+     |                                    |
+ [Client Devices]                         |
+                                          |
 ------------------------------------------+
-Tailscale Mesh
+                Tailscale Mesh
 ------------------------------------------+
-|               |               |
-[TrueNAS]       [Raspberry Pi]   [Remote Devices]
+        |               |               |
+   [TrueNAS]       [Raspberry Pi]   [Remote Devices]
+```
 
 
 ## Notes
