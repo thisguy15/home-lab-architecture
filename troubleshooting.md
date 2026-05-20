@@ -104,6 +104,37 @@ Services now start reliably after updates or reboots.
 
 ---
 
+## TrueNAS User Access – All Users Could See Each Other’s Folders
+
+### **Problem**
+All users were able to see every backup folder on the SMB share, even though each person was supposed to have a private dataset.
+
+### **Symptoms**
+- Wife, daughter, and personal accounts could all see each other’s folders
+- SMB share displayed all datasets regardless of intended permissions
+- Changing permissions inside the share had no effect
+- Using the `truenas_smb` account caused universal access
+
+### **Root Cause**
+The SMB share was being accessed using the **system account** `truenas_smb`, which is not a real user.  
+This account bypasses dataset-level ACLs, causing **every folder to appear for every user**.
+
+### **Resolution**
+- Created **separate TrueNAS user accounts** for each family member
+- Assigned each user **ownership** of their corresponding dataset
+- Updated dataset ACLs to:
+  - Owner: the correct user
+  - Group: (optional) a private group
+  - Permissions: full control for owner only
+- Disabled use of the `truenas_smb` system account for login
+- Tested SMB access using each user’s credentials
+
+### **Outcome**
+Each user now sees **only their own folder**, and all backup directories are properly isolated.  
+SMB permissions behave as expected, and privacy is fully enforced.
+
+---
+
 ## Purpose of This Document
 Troubleshooting is a core IT skill.  
 This log demonstrates:
