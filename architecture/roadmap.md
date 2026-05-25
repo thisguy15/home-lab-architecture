@@ -97,6 +97,72 @@ Creative, playful, high‑impact projects built on a stable foundation.
 
 ---
 
+# Future Subsystems & Projects  
+*Long‑term expansions that extend the home‑lab ecosystem beyond core infrastructure.*
+
+---
+
+## 🔧 Portable Offline Repair Server (RPi Zero 2 W — Altoids Tin Build)  
+A pocket‑sized, battery‑powered offline repair server housed in an Altoids tin.  
+Designed as a sovereign, portable field‑tech kit for repairing Windows, macOS, and Linux systems.
+
+**Planned Features:**  
+- Lithium battery for fully portable operation  
+- Runs as a WiFi AP or joins existing networks  
+- Multi–microSD storage array (RAID‑style) for tool hosting  
+- Hosts repair tools, ISOs, drivers, malware utilities, diagnostics, and portable apps  
+
+**Why:**  
+USB drives fail, external HDDs disconnect, CD drives are gone, and IoT file servers are unreliable.  
+This provides a simple, offline, always‑available toolkit for helping people with IT issues.
+
+---
+
+## 🧠 AI Helper Node (RPi 4)  
+A secondary node that connects to the RPi Zero via WiFi to provide:
+
+- Offline AI troubleshooting  
+- Log analysis  
+- Tool recommendations  
+- Step‑by‑step repair guidance  
+- Local LLM‑based support  
+
+Together, the RPi Zero and RPi 4 form a portable, AI‑augmented repair station.
+
+---
+
+## 💻 Chromebook Thin‑Client Fleet (3–5 Devices)  
+A future client layer for the home mini‑enterprise cloud.
+
+**Planned Capabilities:**  
+- Thin‑client access to VMware desktops  
+- Tailscale‑secured access to all internal pools  
+- Lightweight admin consoles for field‑tech work  
+- Simple scripts for printing on other people’s WiFi  
+- Portable, low‑maintenance endpoints for family and support scenarios  
+
+**Why:**  
+To create a simple, reliable, portable client layer for accessing the home cloud and helping people with IT issues without relying on USB drives or unstable storage devices.
+
+---
+
+## ☁️ Mini Enterprise Cloud Expansion (5‑Node Architecture)  
+Future enhancements to the distributed cloud system:
+
+- OllamaPool (AI compute + model storage)  
+- PlexPool (media)  
+- DataBackupPool (family data + photos)  
+- VMwarePool (virtual desktops + lab environments)  
+- CommsPool (intercom, dashboards, automation)  
+
+**Future Additions:**  
+- DAC storage expansion upgrades  
+- Additional compute nodes  
+- More Tailscale‑connected clients  
+- Integration with Chromebook fleet  
+
+---
+
 # How to Use This Roadmap
 
 - Work in **energy windows**, not deadlines  
